@@ -17,7 +17,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/like', function(req, res){
-  res.render('like')
+  res.render('like', {
+    'useA': 'try01',
+    'useB': 'try02',
+    'List': ['item01','item02','item03']
+  })
 })
 
 module.exports = router;

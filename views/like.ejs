@@ -8,6 +8,14 @@
 </head>
 <body>
     This is "Like" page.
-    <img src="/images/img_web-2.png"/>
+    <%= useA %>
+
+    <ul>
+        <% for(var i =0; i<List.length ; i++){ %>
+        <label for="<%- List[i] %>"><%- List[i] %></label>
+        <input type="text" id="<%- List[i] %>">
+        <% } %>
+    </ul>
+    <!-- <img src="/images/img_web-2.png"/> -->
 </body>
 </html>
